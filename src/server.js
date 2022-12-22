@@ -26,7 +26,6 @@ server.set("view engine", "ejs");
 //
 server.get("/upload", (req, res) => {
   res.render("upload");
-  response.status(201).send("all good");
 });
 //posting here
 server.post("/upload", upload.single("image"), (req, res) => {
