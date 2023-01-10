@@ -10,8 +10,22 @@
   </header>
   <body class="bg-secondary">
     <div
+      class="container mt-3 p-2 d-flex justify-content-center bg-dark rounded text-light"
+    >
+      <div>
+        <h4>Existing routes:</h4>
+        <ul>
+          <li>/upload</li>
+          <li>/authors</li>
+          <li>/blogposts</li>
+          <li>/products/:id/ --> Product + Review</li>
+          <li>/reviews/:id/</li>
+        </ul>
+      </div>
+    </div>
+    <div
       class="container bg-dark rounded text-light d-flex justify-content-center align-items-center mt-3 mb-3"
-      style="height: 95vh; box-shadow: 10px 5px 5px rgba(183, 0, 255, 0.432)"
+      style="height: 75vh; box-shadow: 10px 5px 5px rgba(183, 0, 255, 0.432)"
     >
       <div class="text-center">
         <h3 class="text-warning mb-4">Upload image</h3>
@@ -20,7 +34,7 @@
           <input type="submit" />
         </form>
         <div
-          class="border text-light mt-4 mx-auto d-flex justify-content-center align-items-center"
+          class="border text-light mt-4 mx-auto d-flex justify-content-center align-items-center img-fluid"
           id="display_image"
           style="
             max-height: 40vh;
